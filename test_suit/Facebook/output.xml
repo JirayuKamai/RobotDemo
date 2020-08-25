@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200817 16:31:56.231" generator="Robot 3.2.1 (Python 2.7.17 on darwin)">
+<suite source="/Users/jirayukam-ai_mbp/RobotDemo/test_suit/Facebook/demo_facebook.robot" id="s1" name="Demo Facebook">
+<test id="s1-t1" name="Login facebook - success">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20200817 16:31:56.574" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200817 16:31:56.613" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200817 16:31:56.613" starttime="20200817 16:31:56.613"></status>
+</kw>
+<msg timestamp="20200817 16:31:56.616" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" endtime="20200817 16:31:56.616" starttime="20200817 16:31:56.574"></status>
+</kw>
+<status status="FAIL" endtime="20200817 16:31:56.617" critical="yes" starttime="20200817 16:31:56.572">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200817 16:31:56.619" starttime="20200817 16:31:56.618"></status>
+</kw>
+<status status="FAIL" endtime="20200817 16:31:56.619" starttime="20200817 16:31:56.233"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Demo Facebook" pass="0">Demo Facebook</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
