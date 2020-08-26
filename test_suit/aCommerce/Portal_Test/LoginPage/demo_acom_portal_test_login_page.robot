@@ -1,11 +1,11 @@
 *** Settings ***
-Resource          /Users/jirayukam-ai_mbp/RobotDemo/test_suit/resources/all_global_variables.robot
+Resource          .\Workspeces\RobotDemo\test_suit\resources\all_global_variables.robot
 Suite Setup       Open Browser by Google Chrome
 Suite Teardown    Close All Browsers
 
 *** Test Cases ***
 If user Go to Login Page
-    Go To                          ${url_portal_test_login_page}
+    Go To                                ${url_portal_test_login_page}
     Verify url_portal_test_login_page
 
 If user Login by Valid Data
