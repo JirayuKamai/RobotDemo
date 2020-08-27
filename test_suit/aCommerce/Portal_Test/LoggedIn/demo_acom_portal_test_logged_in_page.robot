@@ -1,5 +1,5 @@
 *** Settings ***
-Resource          /Users/jirayukam-ai_mbp/RobotDemo/test_suit/resources/all_global_variables.robot
+Resource          ../../../resources/all_global_variables.robot
 Suite Setup       Open Browser by Google Chrome
 Suite Teardown    Close All Browsers
 
@@ -19,3 +19,31 @@ If user Login by Valid Data
     Page Should Contain Element            ${admin_nav_main_menu_item_amp_inventory}    Item & Inventory
     Page Should Contain Element            ${admin_nav_main_menu_sales_orders}          Sales Orders
     Page Should Contain Element            ${admin_nav_main_menu_delivery}              Delivery
+
+If user click Promotion nav-menu
+    Open Browser by Google Chrome
+    User is already logged in
+    Click Element                    ${admin_nav_main_menu_promotion}
+    Page Should Contain Element      ${admin_nav_main_menu_promotion_manage_promotion}     Manage Promotion
+    Page Should Contain Element      ${admin_nav_main_menu_promotion_manage_base_price}    Manage Base Price
+
+If user click Item & Inventory nav-menu
+    Open Browser by Google Chrome
+    User is already logged in
+    Click Element                    ${admin_nav_main_menu_item_amp_inventory}                       
+    Page Should Contain Element      ${admin_nav_main_menu_item_amp_inventory_manage_item}           Mange Item
+    Page Should Contain Element      ${admin_nav_main_menu_item_amp_inventory_channel_allocation}    Channel Allocation
+    Page Should Contain Element      ${admin_nav_main_menu_item_amp_inventory_import_history}        Import History
+
+If user click Sales Orders nav-menu
+    Open Browser by Google Chrome
+    User is already logged in
+    Click Element                    ${admin_nav_main_menu_sales_orders}                        
+    Page Should Contain Element      ${admin_nav_main_menu_sales_orders_manage_sales_orders}    Manage Sales Orders
+
+If user click Delivery nav-menu
+    Open Browser by Google Chrome
+    User is already logged in
+    Click Element                    ${admin_nav_main_menu_delivery}                     
+    Page Should Contain Element      ${admin_nav_main_menu_delivery_shipping_orders}     Shipping Orders
+    Page Should Contain Element      ${admin_nav_main_menu_delivery_fleet_management}    Fleet Managent

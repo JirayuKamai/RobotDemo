@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20200825 18:17:22.754" generator="Robot 3.2.1 (Python 2.7.17 on darwin)">
-<suite source="/Users/jirayukam-ai_mbp/RobotDemo/test_suit/aCommerce/Portal_Test" id="s1" name="Portal Test">
-<suite source="/Users/jirayukam-ai_mbp/RobotDemo/test_suit/aCommerce/Portal_Test/ForgetPasswordPage" id="s1-s1" name="ForgetPasswordPage">
-<suite source="/Users/jirayukam-ai_mbp/RobotDemo/test_suit/aCommerce/Portal_Test/ForgetPasswordPage/demo_acom_portal_test_forget_password_page.robot" id="s1-s1-s1" name="Demo Acom Portal Test Forget Password Page">
+<robot rpa="false" generated="20200827 16:37:03.882" generator="Robot 3.2.1 (Python 2.7.17 on darwin)">
+<suite source="/Users/jirayukam-ai_mbp/RobotDemo/test_suit/aCommerce/Portal_Test/LoggedIn/demo_acom_portal_test_loggen_in_page_promotion_menu.robot" id="s1" name="Demo Acom Portal Test Loggen In Page Promotion Menu">
 <kw type="setup" name="Open Browser by Google Chrome" library="common_keywords">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -10,12 +8,12 @@
 <arg>about:blank</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200825 18:17:23.054" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" endtime="20200825 18:17:25.204" starttime="20200825 18:17:23.053"></status>
+<msg timestamp="20200827 16:37:04.257" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" endtime="20200827 16:37:06.640" starttime="20200827 16:37:04.256"></status>
 </kw>
-<status status="PASS" endtime="20200825 18:17:25.205" starttime="20200825 18:17:23.053"></status>
+<status status="PASS" endtime="20200827 16:37:06.640" starttime="20200827 16:37:04.256"></status>
 </kw>
-<test id="s1-s1-s1-t1" name="Check the Forget Password Page">
+<test id="s1-t1" name="Check filter panel">
 <kw name="Open Browser by Google Chrome" library="common_keywords">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -23,299 +21,21 @@
 <arg>about:blank</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200825 18:17:25.208" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" endtime="20200825 18:17:27.087" starttime="20200825 18:17:25.208"></status>
+<msg timestamp="20200827 16:37:06.644" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" endtime="20200827 16:37:08.699" starttime="20200827 16:37:06.643"></status>
 </kw>
-<status status="PASS" endtime="20200825 18:17:27.087" starttime="20200825 18:17:25.207"></status>
+<status status="PASS" endtime="20200827 16:37:08.700" starttime="20200827 16:37:06.643"></status>
 </kw>
-<kw name="Go To" library="Selenium2Library">
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<arguments>
-<arg>${url_portal_test_forget_password_page}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:27.088" level="INFO">Opening url 'https://identity.integration.acommercedev.com/o/forget_password/'</msg>
-<status status="PASS" endtime="20200825 18:17:28.103" starttime="20200825 18:17:27.088"></status>
-</kw>
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_body_login_form}</arg>
-</arguments>
-<status status="PASS" endtime="20200825 18:17:28.127" starttime="20200825 18:17:28.104"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_body_login_form}</arg>
-<arg>Forget Password</arg>
-</arguments>
-<msg timestamp="20200825 18:17:28.138" level="INFO">Current page contains element 'class:idp-login__body__login-form'.</msg>
-<status status="PASS" endtime="20200825 18:17:28.139" starttime="20200825 18:17:28.128"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_body_login_form}</arg>
-<arg>Enter your email to reset your password</arg>
-</arguments>
-<msg timestamp="20200825 18:17:28.148" level="INFO">Current page contains element 'class:idp-login__body__login-form'.</msg>
-<status status="PASS" endtime="20200825 18:17:28.148" starttime="20200825 18:17:28.139"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${forget_password_page_input}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:28.159" level="INFO">Current page contains element 'class:idp-login__body__login-form__text-box'.</msg>
-<status status="PASS" endtime="20200825 18:17:28.159" starttime="20200825 18:17:28.149"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${forget_password_username_email_input}</arg>
-<arg>Username or Email</arg>
-</arguments>
-<msg timestamp="20200825 18:17:28.172" level="INFO">Current page contains element '//*[@placeholder="Username or Email"]'.</msg>
-<status status="PASS" endtime="20200825 18:17:28.172" starttime="20200825 18:17:28.160"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${forget_password_page_submit_btn}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:28.183" level="INFO">Current page contains element 'class:idp-login__body__login-form button'.</msg>
-<status status="PASS" endtime="20200825 18:17:28.183" starttime="20200825 18:17:28.173"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${forget_password_page_back_to_login}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:28.194" level="INFO">Current page contains element 'class:idp-login__body__login-form h6'.</msg>
-<status status="PASS" endtime="20200825 18:17:28.194" starttime="20200825 18:17:28.183"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${forget_password_page_login_btn}</arg>
-<arg>Submit</arg>
-</arguments>
-<msg timestamp="20200825 18:17:28.204" level="INFO">Current page contains element 'class:idp-login__body__login-form h6 a'.</msg>
-<status status="PASS" endtime="20200825 18:17:28.205" starttime="20200825 18:17:28.194"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:17:28.205" critical="yes" starttime="20200825 18:17:25.205"></status>
-</test>
-<test id="s1-s1-s1-t2" name="If user Click the Login button on the Forget Password Page">
-<kw name="Open Browser by Google Chrome" library="common_keywords">
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<arguments>
-<arg>about:blank</arg>
-<arg>chrome</arg>
-</arguments>
-<msg timestamp="20200825 18:17:28.209" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" endtime="20200825 18:17:30.066" starttime="20200825 18:17:28.209"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:17:30.066" starttime="20200825 18:17:28.208"></status>
-</kw>
-<kw name="Go To" library="Selenium2Library">
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<arguments>
-<arg>${url_portal_test_forget_password_page}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:30.068" level="INFO">Opening url 'https://identity.integration.acommercedev.com/o/forget_password/'</msg>
-<status status="PASS" endtime="20200825 18:17:30.784" starttime="20200825 18:17:30.067"></status>
-</kw>
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_body_login_form}</arg>
-</arguments>
-<status status="PASS" endtime="20200825 18:17:30.798" starttime="20200825 18:17:30.784"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${forget_password_page_login_btn}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:30.799" level="INFO">Clicking element 'class:idp-login__body__login-form h6 a'.</msg>
-<status status="PASS" endtime="20200825 18:17:31.431" starttime="20200825 18:17:30.799"></status>
-</kw>
-<kw name="Page Should Contain Image" library="Selenium2Library">
-<doc>Verifies image identified by ``locator`` is found from current page.</doc>
-<arguments>
-<arg>${portaltest_logo}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:31.453" level="INFO">Current page contains image 'class:idp-login__header__logo'.</msg>
-<status status="PASS" endtime="20200825 18:17:31.453" starttime="20200825 18:17:31.431"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_body}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:31.469" level="INFO">Current page contains element 'class:idp-login__body'.</msg>
-<status status="PASS" endtime="20200825 18:17:31.469" starttime="20200825 18:17:31.454"></status>
-</kw>
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<arguments>
-<arg>${portaltest_login_h3}</arg>
-<arg>Login to</arg>
-</arguments>
-<msg timestamp="20200825 18:17:31.469" level="INFO">Verifying element 'class:idp-login__body__login-form h3' contains exact text 'Login to'.</msg>
-<status status="PASS" endtime="20200825 18:17:31.495" starttime="20200825 18:17:31.469"></status>
-</kw>
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<arguments>
-<arg>${portaltest_login_h4}</arg>
-<arg>aCommerce Management Portal</arg>
-</arguments>
-<msg timestamp="20200825 18:17:31.496" level="INFO">Verifying element 'class:idp-login__body__login-form h4' contains exact text 'aCommerce Management Portal'.</msg>
-<status status="PASS" endtime="20200825 18:17:31.517" starttime="20200825 18:17:31.496"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_input_username}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:31.527" level="INFO">Current page contains element 'name:auth-username'.</msg>
-<status status="PASS" endtime="20200825 18:17:31.527" starttime="20200825 18:17:31.517"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_input_password}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:31.539" level="INFO">Current page contains element 'name:auth-password'.</msg>
-<status status="PASS" endtime="20200825 18:17:31.539" starttime="20200825 18:17:31.527"></status>
-</kw>
-<kw name="Page Should Contain Button" library="Selenium2Library">
-<doc>Verifies button ``locator`` is found from current page.</doc>
-<arguments>
-<arg>${portaltest_login_btn}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:31.568" level="INFO">Current page contains button 'class:btn.btn-primary'.</msg>
-<status status="PASS" endtime="20200825 18:17:31.569" starttime="20200825 18:17:31.539"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_h6}</arg>
-<arg>Forgot your password ?</arg>
-</arguments>
-<msg timestamp="20200825 18:17:31.578" level="INFO">Current page contains element 'class:idp-login__body__login-form h6'.</msg>
-<status status="PASS" endtime="20200825 18:17:31.578" starttime="20200825 18:17:31.569"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_h6}</arg>
-<arg>No worries,</arg>
-</arguments>
-<msg timestamp="20200825 18:17:31.588" level="INFO">Current page contains element 'class:idp-login__body__login-form h6'.</msg>
-<status status="PASS" endtime="20200825 18:17:31.588" starttime="20200825 18:17:31.579"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_reset_password_link}</arg>
-<arg>Click here to Reset your password.</arg>
-<arg>${url_portal_test_forgot_pwd_page}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:31.609" level="INFO">Current page contains element 'class:idp-login__body__login-form h6 a'.</msg>
-<status status="PASS" endtime="20200825 18:17:31.609" starttime="20200825 18:17:31.588"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:17:31.610" critical="yes" starttime="20200825 18:17:28.206"></status>
-</test>
-<test id="s1-s1-s1-t3" name="If user Click the Submit buttin by the Empty Data">
-<kw name="Open Browser by Google Chrome" library="common_keywords">
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<arguments>
-<arg>about:blank</arg>
-<arg>chrome</arg>
-</arguments>
-<msg timestamp="20200825 18:17:31.613" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" endtime="20200825 18:17:33.516" starttime="20200825 18:17:31.612"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:17:33.516" starttime="20200825 18:17:31.611"></status>
-</kw>
-<kw name="Go To" library="Selenium2Library">
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<arguments>
-<arg>${url_portal_test_forget_password_page}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:33.517" level="INFO">Opening url 'https://identity.integration.acommercedev.com/o/forget_password/'</msg>
-<status status="PASS" endtime="20200825 18:17:34.300" starttime="20200825 18:17:33.517"></status>
-</kw>
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_body_login_form}</arg>
-</arguments>
-<status status="PASS" endtime="20200825 18:17:34.311" starttime="20200825 18:17:34.301"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${forget_password_page_submit_btn}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:34.312" level="INFO">Clicking element 'class:idp-login__body__login-form button'.</msg>
-<status status="PASS" endtime="20200825 18:17:34.364" starttime="20200825 18:17:34.312"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${forget_password_page_invalid_username_email}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:34.374" level="INFO">Current page contains element '//*[@oninvalid="this.style.borderColor = 'rgba(235, 87, 87, 0.4)'"]'.</msg>
-<status status="PASS" endtime="20200825 18:17:34.374" starttime="20200825 18:17:34.364"></status>
-</kw>
-<kw name="Location Should Be" library="Selenium2Library">
-<doc>Verifies that the current URL is exactly ``url``.</doc>
-<arguments>
-<arg>${url_portal_test_forget_password_page}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:34.379" level="INFO">Current location is 'https://identity.integration.acommercedev.com/o/forget_password/'.</msg>
-<status status="PASS" endtime="20200825 18:17:34.379" starttime="20200825 18:17:34.375"></status>
-</kw>
-<tags>
-<tag>test</tag>
-</tags>
-<status status="PASS" endtime="20200825 18:17:34.379" critical="yes" starttime="20200825 18:17:31.610"></status>
-</test>
-<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20200825 18:17:34.731" starttime="20200825 18:17:34.381"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:17:34.731" starttime="20200825 18:17:22.780"></status>
-</suite>
-<status status="PASS" endtime="20200825 18:17:34.735" starttime="20200825 18:17:22.778"></status>
-</suite>
-<suite source="/Users/jirayukam-ai_mbp/RobotDemo/test_suit/aCommerce/Portal_Test/LoggedIn" id="s1-s2" name="LoggedIn">
-<suite source="/Users/jirayukam-ai_mbp/RobotDemo/test_suit/aCommerce/Portal_Test/LoggedIn/demo_acom_portal_test_logged_in_page.robot" id="s1-s2-s1" name="Demo Acom Portal Test Logged In Page">
-<kw type="setup" name="Open Browser by Google Chrome" library="common_keywords">
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<arguments>
-<arg>about:blank</arg>
-<arg>chrome</arg>
-</arguments>
-<msg timestamp="20200825 18:17:34.768" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" endtime="20200825 18:17:36.882" starttime="20200825 18:17:34.768"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:17:36.883" starttime="20200825 18:17:34.767"></status>
-</kw>
-<test id="s1-s2-s1-t1" name="If user Login by Valid Data">
+<kw name="User is already promotion page" library="portal_test_keyword">
+<kw name="User login success" library="portal_test_keyword">
+<kw name="User is already logged in" library="portal_test_keyword">
 <kw name="Go To" library="Selenium2Library">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>${url_portal_test_login_page}</arg>
 </arguments>
-<msg timestamp="20200825 18:17:36.885" level="INFO">Opening url 'https://portaltest.acommercedev.com/'</msg>
-<status status="PASS" endtime="20200825 18:17:38.166" starttime="20200825 18:17:36.884"></status>
+<msg timestamp="20200827 16:37:08.702" level="INFO">Opening url 'https://portaltest.acommercedev.com/'</msg>
+<status status="PASS" endtime="20200827 16:37:09.783" starttime="20200827 16:37:08.702"></status>
 </kw>
 <kw name="Input a Valid Username and Password" library="portal_test_keyword">
 <kw name="Input Text" library="Selenium2Library">
@@ -324,8 +44,8 @@
 <arg>${portaltest_input_username}</arg>
 <arg>${portaltest_username}</arg>
 </arguments>
-<msg timestamp="20200825 18:17:38.168" level="INFO">Typing text 'jirayu.k@acommerce.asia' into text field 'name:auth-username'.</msg>
-<status status="PASS" endtime="20200825 18:17:38.302" starttime="20200825 18:17:38.167"></status>
+<msg timestamp="20200827 16:37:09.784" level="INFO">Typing text 'jirayu.k@acommerce.asia' into text field 'name:auth-username'.</msg>
+<status status="PASS" endtime="20200827 16:37:09.920" starttime="20200827 16:37:09.784"></status>
 </kw>
 <kw name="Input Password" library="Selenium2Library">
 <doc>Types the given password into the text field identified by ``locator``.</doc>
@@ -333,663 +53,296 @@
 <arg>${portaltest_input_password}</arg>
 <arg>${portaltest_password}</arg>
 </arguments>
-<msg timestamp="20200825 18:17:38.303" level="INFO">Typing password into text field 'name:auth-password'.</msg>
-<msg timestamp="20200825 18:17:38.332" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20200825 18:17:38.374" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" endtime="20200825 18:17:38.374" starttime="20200825 18:17:38.302"></status>
+<msg timestamp="20200827 16:37:09.920" level="INFO">Typing password into text field 'name:auth-password'.</msg>
+<msg timestamp="20200827 16:37:09.950" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200827 16:37:09.984" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" endtime="20200827 16:37:09.984" starttime="20200827 16:37:09.920"></status>
 </kw>
-<status status="PASS" endtime="20200825 18:17:38.374" starttime="20200825 18:17:38.167"></status>
+<status status="PASS" endtime="20200827 16:37:09.984" starttime="20200827 16:37:09.783"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${portaltest_login_btn}</arg>
 </arguments>
-<msg timestamp="20200825 18:17:38.375" level="INFO">Clicking element 'class:btn.btn-primary'.</msg>
-<status status="PASS" endtime="20200825 18:17:40.869" starttime="20200825 18:17:38.374"></status>
+<msg timestamp="20200827 16:37:09.985" level="INFO">Clicking element 'class:btn.btn-primary'.</msg>
+<status status="PASS" endtime="20200827 16:37:13.258" starttime="20200827 16:37:09.984"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
 <arguments>
 <arg>${admin_header_logo}</arg>
 </arguments>
-<status status="PASS" endtime="20200825 18:17:42.814" starttime="20200825 18:17:40.870"></status>
+<status status="PASS" endtime="20200827 16:37:15.036" starttime="20200827 16:37:13.258"></status>
+</kw>
+<status status="PASS" endtime="20200827 16:37:15.036" starttime="20200827 16:37:08.702"></status>
+</kw>
+<status status="PASS" endtime="20200827 16:37:15.036" starttime="20200827 16:37:08.701"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url_portal_test_promotion}</arg>
+</arguments>
+<msg timestamp="20200827 16:37:15.037" level="INFO">Opening url 'https://portaltest.acommercedev.com/promotions'</msg>
+<status status="PASS" endtime="20200827 16:37:16.455" starttime="20200827 16:37:15.036"></status>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
-<arg>${admin_partner_text}</arg>
-<arg>Portal | Loreal Paris TH</arg>
+<arg>${admin_manage_promotion_filter_panel}</arg>
 </arguments>
-<msg timestamp="20200825 18:17:42.831" level="INFO">Current page contains element '//*[@id="wrapper"]/div[2]/div[1]/div/p[1]'.</msg>
-<status status="PASS" endtime="20200825 18:17:42.831" starttime="20200825 18:17:42.814"></status>
+<msg timestamp="20200827 16:37:16.470" level="INFO">Current page contains element '//*[@class="filter-panel row wells wells-no-border wells-no-vertical-margin"]'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.470" starttime="20200827 16:37:16.455"></status>
+</kw>
+<status status="PASS" endtime="20200827 16:37:16.470" starttime="20200827 16:37:08.701"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel}</arg>
+</arguments>
+<status status="PASS" endtime="20200827 16:37:16.482" starttime="20200827 16:37:16.470"></status>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
-<arg>${admin_info_header_text}</arg>
-<arg>Hello</arg>
+<arg>${admin_manage_promotion_filter_panel_partner_lbl}</arg>
+<arg>Partner</arg>
 </arguments>
-<msg timestamp="20200825 18:17:42.854" level="INFO">Current page contains element '//*[@id="wrapper"]/aside/div[1]/div/h4[1]'.</msg>
-<status status="PASS" endtime="20200825 18:17:42.855" starttime="20200825 18:17:42.832"></status>
+<msg timestamp="20200827 16:37:16.537" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[1]/div[1]/div/label'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.537" starttime="20200827 16:37:16.483"></status>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
-<arg>${admin_info_header_user}</arg>
-<arg>jirayu</arg>
+<arg>${admin_manage_promotion_filter_panel_partner_input}</arg>
 </arguments>
-<msg timestamp="20200825 18:17:42.865" level="INFO">Current page contains element '//*[@id="wrapper"]/aside/div[1]/div/h4[2]'.</msg>
-<status status="PASS" endtime="20200825 18:17:42.865" starttime="20200825 18:17:42.855"></status>
+<msg timestamp="20200827 16:37:16.552" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[1]/div[1]/div/dropdown-select/ngx-select/div/input'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.552" starttime="20200827 16:37:16.538"></status>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
-<arg>${admin_nav_main_menu}</arg>
+<arg>${admin_manage_promotion_filter_panel_partner_placeholder}</arg>
+<arg>Filter by partners</arg>
 </arguments>
-<msg timestamp="20200825 18:17:42.879" level="INFO">Current page contains element 'class:portal-navigation__main-menu__menu--wrapper'.</msg>
-<status status="PASS" endtime="20200825 18:17:42.879" starttime="20200825 18:17:42.865"></status>
+<msg timestamp="20200827 16:37:16.565" level="INFO">Current page contains element '//*[@placeholder="Filter by partners"]'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.565" starttime="20200827 16:37:16.553"></status>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
-<arg>${admin_nav_main_menu_hide}</arg>
-<arg>Hide Menu</arg>
+<arg>${admin_manage_promotion_filter_panel_channel_lbl}</arg>
+<arg>Channel</arg>
 </arguments>
-<msg timestamp="20200825 18:17:42.889" level="INFO">Current page contains element 'class:portal-navigation__main-menu__menu--hide-menu'.</msg>
-<status status="PASS" endtime="20200825 18:17:42.889" starttime="20200825 18:17:42.879"></status>
+<msg timestamp="20200827 16:37:16.579" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[1]/div[2]/div/label'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.579" starttime="20200827 16:37:16.566"></status>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
-<arg>${admin_nav_main_menu_summary}</arg>
-<arg>Summary</arg>
+<arg>${admin_manage_promotion_filter_panel_channel_input}</arg>
 </arguments>
-<msg timestamp="20200825 18:17:42.900" level="INFO">Current page contains element '//*[@id="summary"]'.</msg>
-<status status="PASS" endtime="20200825 18:17:42.900" starttime="20200825 18:17:42.889"></status>
+<msg timestamp="20200827 16:37:16.597" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[1]/div[2]/div/dropdown-select/ngx-select/div/input'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.598" starttime="20200827 16:37:16.580"></status>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
-<arg>${admin_nav_main_menu_promotion}</arg>
-<arg>Promotions</arg>
+<arg>${admin_manage_promotion_filter_panel_channel_placeholder}</arg>
+<arg>Filter by channels</arg>
 </arguments>
-<msg timestamp="20200825 18:17:42.910" level="INFO">Current page contains element '//*[@id="promotions"]'.</msg>
-<status status="PASS" endtime="20200825 18:17:42.911" starttime="20200825 18:17:42.901"></status>
+<msg timestamp="20200827 16:37:16.612" level="INFO">Current page contains element '//*[@placeholder="Filter by channels"]'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.612" starttime="20200827 16:37:16.598"></status>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
-<arg>${admin_nav_main_menu_item_amp_inventory}</arg>
-<arg>Item &amp; Inventory</arg>
+<arg>${admin_manage_promotion_filter_panel_promotion_name_lbl}</arg>
+<arg>Promotion Name</arg>
 </arguments>
-<msg timestamp="20200825 18:17:42.923" level="INFO">Current page contains element '//*[@id="item-amp-inventory"]'.</msg>
-<status status="PASS" endtime="20200825 18:17:42.923" starttime="20200825 18:17:42.911"></status>
+<msg timestamp="20200827 16:37:16.627" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[1]/div[3]/div/label'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.627" starttime="20200827 16:37:16.613"></status>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
-<arg>${admin_nav_main_menu_sales_orders}</arg>
-<arg>Sales Orders</arg>
+<arg>${admin_manage_promotion_filter_panel_promotion_name_input}</arg>
 </arguments>
-<msg timestamp="20200825 18:17:42.933" level="INFO">Current page contains element '//*[@id="sales-orders"]'.</msg>
-<status status="PASS" endtime="20200825 18:17:42.933" starttime="20200825 18:17:42.923"></status>
+<msg timestamp="20200827 16:37:16.641" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[1]/div[3]/div/search-box/div/input'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.642" starttime="20200827 16:37:16.627"></status>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
-<arg>${admin_nav_main_menu_delivery}</arg>
-<arg>Delivery</arg>
+<arg>${admin_manage_promotion_filter_panel_promotion_name_btn}</arg>
 </arguments>
-<msg timestamp="20200825 18:17:42.946" level="INFO">Current page contains element '//*[@id="delivery"]'.</msg>
-<status status="PASS" endtime="20200825 18:17:42.946" starttime="20200825 18:17:42.934"></status>
+<msg timestamp="20200827 16:37:16.657" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[1]/div[3]/div/search-box/div/span/button'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.657" starttime="20200827 16:37:16.642"></status>
 </kw>
-<status status="PASS" endtime="20200825 18:17:42.946" critical="yes" starttime="20200825 18:17:36.883"></status>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel_promotion_name_placeholder}</arg>
+<arg>Search</arg>
+</arguments>
+<msg timestamp="20200827 16:37:16.676" level="INFO">Current page contains element '//*[@placeholder="Search"]'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.676" starttime="20200827 16:37:16.659"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel_start_date_lbl}</arg>
+<arg>Start Date</arg>
+</arguments>
+<msg timestamp="20200827 16:37:16.691" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[2]/div[1]/label'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.692" starttime="20200827 16:37:16.676"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel_start_date_input_date}</arg>
+</arguments>
+<msg timestamp="20200827 16:37:16.725" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[2]/div[1]/datetime-picker/div/div[1]/input'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.725" starttime="20200827 16:37:16.692"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel_start_date_input_hour}</arg>
+</arguments>
+<msg timestamp="20200827 16:37:16.737" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[2]/div[1]/datetime-picker/div/div[2]/timepicker/table/tbody/tr[2]/td[1]/input'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.738" starttime="20200827 16:37:16.726"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel_start_date_input_minus}</arg>
+</arguments>
+<msg timestamp="20200827 16:37:16.753" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[2]/div[1]/datetime-picker/div/div[2]/timepicker/table/tbody/tr[2]/td[3]/input'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.753" starttime="20200827 16:37:16.738"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel_start_date_placeholder}</arg>
+<arg>DD/MM/YY</arg>
+</arguments>
+<msg timestamp="20200827 16:37:16.769" level="INFO">Current page contains element '//*[@placeholder="DD/MM/YYYY"]'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.769" starttime="20200827 16:37:16.753"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel_end_date_lbl}</arg>
+<arg>End Date</arg>
+</arguments>
+<msg timestamp="20200827 16:37:16.783" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[2]/div[2]/label'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.783" starttime="20200827 16:37:16.769"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel_end_date_input_date}</arg>
+</arguments>
+<msg timestamp="20200827 16:37:16.799" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[2]/div[2]/datetime-picker/div/div[1]/input'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.799" starttime="20200827 16:37:16.784"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel_end_date_input_hour}</arg>
+</arguments>
+<msg timestamp="20200827 16:37:16.816" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[2]/div[2]/datetime-picker/div/div[2]/timepicker/table/tbody/tr[2]/td[1]/input'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.816" starttime="20200827 16:37:16.799"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel_end_date_input_minus}</arg>
+</arguments>
+<msg timestamp="20200827 16:37:16.832" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[2]/div[2]/datetime-picker/div/div[2]/timepicker/table/tbody/tr[2]/td[3]/input'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.832" starttime="20200827 16:37:16.816"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel_end_date_placeholder}</arg>
+<arg>DD/MM/YY</arg>
+</arguments>
+<msg timestamp="20200827 16:37:16.843" level="INFO">Current page contains element '//*[@placeholder="DD/MM/YYYY"]'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.844" starttime="20200827 16:37:16.833"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel_type_lbl}</arg>
+<arg>Type</arg>
+</arguments>
+<msg timestamp="20200827 16:37:16.857" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[2]/div[3]/label'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.858" starttime="20200827 16:37:16.844"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel_type_dropdown_select}</arg>
+</arguments>
+<msg timestamp="20200827 16:37:16.876" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[2]/div[3]/dropdown-select/ngx-select/div/div[2]/div'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.876" starttime="20200827 16:37:16.858"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel_type_placeholder}</arg>
+<arg>No option selected</arg>
+</arguments>
+<msg timestamp="20200827 16:37:16.893" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[2]/div[3]/dropdown-select/ngx-select/div/div[2]/div/span[1]'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.893" starttime="20200827 16:37:16.877"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel_condition_lbl}</arg>
+<arg>Condition</arg>
+</arguments>
+<msg timestamp="20200827 16:37:16.908" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[2]/div[4]/label'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.908" starttime="20200827 16:37:16.894"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel_condition_dropdown_select}</arg>
+</arguments>
+<msg timestamp="20200827 16:37:16.928" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[2]/div[4]/dropdown-select/ngx-select/div/div[2]/div'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.929" starttime="20200827 16:37:16.908"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${admin_manage_promotion_filter_panel_condition_placeholder}</arg>
+<arg>No option selected</arg>
+</arguments>
+<msg timestamp="20200827 16:37:16.956" level="INFO">Current page contains element '//*[@id="main-container"]/app-root/div/div/app-promotion-list/div[1]/div[2]/div[4]/dropdown-select/ngx-select/div/div[2]/div/span[1]/span'.</msg>
+<status status="PASS" endtime="20200827 16:37:16.957" starttime="20200827 16:37:16.929"></status>
+</kw>
+<status status="PASS" endtime="20200827 16:37:16.957" critical="yes" starttime="20200827 16:37:06.641"></status>
 </test>
 <kw type="teardown" name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20200825 18:17:43.099" starttime="20200825 18:17:42.947"></status>
+<status status="PASS" endtime="20200827 16:37:17.119" starttime="20200827 16:37:16.960"></status>
 </kw>
-<status status="PASS" endtime="20200825 18:17:43.099" starttime="20200825 18:17:34.747"></status>
-</suite>
-<status status="PASS" endtime="20200825 18:17:43.102" starttime="20200825 18:17:34.737"></status>
-</suite>
-<suite source="/Users/jirayukam-ai_mbp/RobotDemo/test_suit/aCommerce/Portal_Test/LoginPage" id="s1-s3" name="LoginPage">
-<suite source="/Users/jirayukam-ai_mbp/RobotDemo/test_suit/aCommerce/Portal_Test/LoginPage/demo_acom_portal_test_login_page.robot" id="s1-s3-s1" name="Demo Acom Portal Test Login Page">
-<kw type="setup" name="Open Browser by Google Chrome" library="common_keywords">
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<arguments>
-<arg>about:blank</arg>
-<arg>chrome</arg>
-</arguments>
-<msg timestamp="20200825 18:17:43.130" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" endtime="20200825 18:17:45.180" starttime="20200825 18:17:43.129"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:17:45.181" starttime="20200825 18:17:43.128"></status>
-</kw>
-<test id="s1-s3-s1-t1" name="If user Go to Login Page">
-<kw name="Go To" library="Selenium2Library">
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<arguments>
-<arg>${url_portal_test_login_page}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:45.183" level="INFO">Opening url 'https://portaltest.acommercedev.com/'</msg>
-<status status="PASS" endtime="20200825 18:17:47.324" starttime="20200825 18:17:45.183"></status>
-</kw>
-<kw name="Verify url_portal_test_login_page" library="portal_test_keyword">
-<kw name="Page Should Contain Image" library="Selenium2Library">
-<doc>Verifies image identified by ``locator`` is found from current page.</doc>
-<arguments>
-<arg>${portaltest_logo}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:47.345" level="INFO">Current page contains image 'class:idp-login__header__logo'.</msg>
-<status status="PASS" endtime="20200825 18:17:47.345" starttime="20200825 18:17:47.325"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_body}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:47.358" level="INFO">Current page contains element 'class:idp-login__body'.</msg>
-<status status="PASS" endtime="20200825 18:17:47.358" starttime="20200825 18:17:47.345"></status>
-</kw>
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<arguments>
-<arg>${portaltest_login_h3}</arg>
-<arg>Login to</arg>
-</arguments>
-<msg timestamp="20200825 18:17:47.359" level="INFO">Verifying element 'class:idp-login__body__login-form h3' contains exact text 'Login to'.</msg>
-<status status="PASS" endtime="20200825 18:17:47.378" starttime="20200825 18:17:47.359"></status>
-</kw>
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<arguments>
-<arg>${portaltest_login_h4}</arg>
-<arg>aCommerce Management Portal</arg>
-</arguments>
-<msg timestamp="20200825 18:17:47.378" level="INFO">Verifying element 'class:idp-login__body__login-form h4' contains exact text 'aCommerce Management Portal'.</msg>
-<status status="PASS" endtime="20200825 18:17:47.397" starttime="20200825 18:17:47.378"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_input_username}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:47.409" level="INFO">Current page contains element 'name:auth-username'.</msg>
-<status status="PASS" endtime="20200825 18:17:47.409" starttime="20200825 18:17:47.397"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_input_password}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:47.417" level="INFO">Current page contains element 'name:auth-password'.</msg>
-<status status="PASS" endtime="20200825 18:17:47.417" starttime="20200825 18:17:47.410"></status>
-</kw>
-<kw name="Page Should Contain Button" library="Selenium2Library">
-<doc>Verifies button ``locator`` is found from current page.</doc>
-<arguments>
-<arg>${portaltest_login_btn}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:47.441" level="INFO">Current page contains button 'class:btn.btn-primary'.</msg>
-<status status="PASS" endtime="20200825 18:17:47.441" starttime="20200825 18:17:47.418"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_h6}</arg>
-<arg>Forgot your password ?</arg>
-</arguments>
-<msg timestamp="20200825 18:17:47.449" level="INFO">Current page contains element 'class:idp-login__body__login-form h6'.</msg>
-<status status="PASS" endtime="20200825 18:17:47.449" starttime="20200825 18:17:47.441"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_h6}</arg>
-<arg>No worries,</arg>
-</arguments>
-<msg timestamp="20200825 18:17:47.456" level="INFO">Current page contains element 'class:idp-login__body__login-form h6'.</msg>
-<status status="PASS" endtime="20200825 18:17:47.456" starttime="20200825 18:17:47.449"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_reset_password_link}</arg>
-<arg>Click here to Reset your password.</arg>
-<arg>${url_portal_test_forgot_pwd_page}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:47.464" level="INFO">Current page contains element 'class:idp-login__body__login-form h6 a'.</msg>
-<status status="PASS" endtime="20200825 18:17:47.465" starttime="20200825 18:17:47.456"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:17:47.465" starttime="20200825 18:17:47.325"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:17:47.465" critical="yes" starttime="20200825 18:17:45.181"></status>
-</test>
-<test id="s1-s3-s1-t2" name="If user Login by Valid Data">
-<kw name="Go To" library="Selenium2Library">
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<arguments>
-<arg>${url_portal_test_login_page}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:47.466" level="INFO">Opening url 'https://portaltest.acommercedev.com/'</msg>
-<status status="PASS" endtime="20200825 18:17:47.950" starttime="20200825 18:17:47.466"></status>
-</kw>
-<kw name="Input a Valid Username and Password" library="portal_test_keyword">
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>${portaltest_input_username}</arg>
-<arg>${portaltest_username}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:47.952" level="INFO">Typing text 'jirayu.k@acommerce.asia' into text field 'name:auth-username'.</msg>
-<status status="PASS" endtime="20200825 18:17:48.083" starttime="20200825 18:17:47.952"></status>
-</kw>
-<kw name="Input Password" library="Selenium2Library">
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>${portaltest_input_password}</arg>
-<arg>${portaltest_password}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:48.084" level="INFO">Typing password into text field 'name:auth-password'.</msg>
-<msg timestamp="20200825 18:17:48.117" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20200825 18:17:48.163" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" endtime="20200825 18:17:48.163" starttime="20200825 18:17:48.083"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:17:48.164" starttime="20200825 18:17:47.951"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${portaltest_login_btn}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:48.164" level="INFO">Clicking element 'class:btn.btn-primary'.</msg>
-<status status="PASS" endtime="20200825 18:17:51.904" starttime="20200825 18:17:48.164"></status>
-</kw>
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<arguments>
-<arg>${admin_header_logo}</arg>
-</arguments>
-<status status="PASS" endtime="20200825 18:17:53.717" starttime="20200825 18:17:51.904"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${admin_partner_text}</arg>
-<arg>Portal | Loreal Paris TH</arg>
-</arguments>
-<msg timestamp="20200825 18:17:53.734" level="INFO">Current page contains element '//*[@id="wrapper"]/div[2]/div[1]/div/p[1]'.</msg>
-<status status="PASS" endtime="20200825 18:17:53.734" starttime="20200825 18:17:53.717"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${admin_info_header_text}</arg>
-<arg>Hello</arg>
-</arguments>
-<msg timestamp="20200825 18:17:53.750" level="INFO">Current page contains element '//*[@id="wrapper"]/aside/div[1]/div/h4[1]'.</msg>
-<status status="PASS" endtime="20200825 18:17:53.750" starttime="20200825 18:17:53.735"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${admin_info_header_user}</arg>
-<arg>jirayu</arg>
-</arguments>
-<msg timestamp="20200825 18:17:53.763" level="INFO">Current page contains element '//*[@id="wrapper"]/aside/div[1]/div/h4[2]'.</msg>
-<status status="PASS" endtime="20200825 18:17:53.763" starttime="20200825 18:17:53.750"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:17:53.764" critical="yes" starttime="20200825 18:17:47.465"></status>
-</test>
-<test id="s1-s3-s1-t3" name="If user Login by Invalid Data">
-<kw name="Open Browser by Google Chrome" library="common_keywords">
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<arguments>
-<arg>about:blank</arg>
-<arg>chrome</arg>
-</arguments>
-<msg timestamp="20200825 18:17:53.766" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" endtime="20200825 18:17:55.689" starttime="20200825 18:17:53.765"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:17:55.689" starttime="20200825 18:17:53.765"></status>
-</kw>
-<kw name="Go To" library="Selenium2Library">
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<arguments>
-<arg>${url_portal_test_login_page}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:55.691" level="INFO">Opening url 'https://portaltest.acommercedev.com/'</msg>
-<status status="PASS" endtime="20200825 18:17:57.696" starttime="20200825 18:17:55.690"></status>
-</kw>
-<kw name="Input a Invalid Username and Password" library="portal_test_keyword">
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>${portaltest_input_username}</arg>
-<arg>${portaltest_invalid_username}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:57.697" level="INFO">Typing text 'invalid.user@acommerce.asia' into text field 'name:auth-username'.</msg>
-<status status="PASS" endtime="20200825 18:17:57.854" starttime="20200825 18:17:57.696"></status>
-</kw>
-<kw name="Input Password" library="Selenium2Library">
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>${portaltest_input_password}</arg>
-<arg>${portaltest_invalid_password}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:57.855" level="INFO">Typing password into text field 'name:auth-password'.</msg>
-<msg timestamp="20200825 18:17:57.888" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20200825 18:17:57.959" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" endtime="20200825 18:17:57.959" starttime="20200825 18:17:57.854"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:17:57.959" starttime="20200825 18:17:57.696"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${portaltest_login_btn}</arg>
-</arguments>
-<msg timestamp="20200825 18:17:57.960" level="INFO">Clicking element 'class:btn.btn-primary'.</msg>
-<status status="PASS" endtime="20200825 18:17:58.540" starttime="20200825 18:17:57.960"></status>
-</kw>
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<arguments>
-<arg>${portaltest_input_username_or_password_incorrect}</arg>
-</arguments>
-<status status="PASS" endtime="20200825 18:17:58.555" starttime="20200825 18:17:58.540"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_input_username_or_password_incorrect}</arg>
-<arg>Username or Password is incorrect.</arg>
-</arguments>
-<msg timestamp="20200825 18:17:58.567" level="INFO">Current page contains element 'class:idp-login__body__error-banner'.</msg>
-<status status="PASS" endtime="20200825 18:17:58.567" starttime="20200825 18:17:58.556"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:17:58.568" critical="yes" starttime="20200825 18:17:53.764"></status>
-</test>
-<test id="s1-s3-s1-t4" name="If user Login by Empty Data">
-<kw name="Open Browser by Google Chrome" library="common_keywords">
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<arguments>
-<arg>about:blank</arg>
-<arg>chrome</arg>
-</arguments>
-<msg timestamp="20200825 18:17:58.571" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" endtime="20200825 18:18:00.450" starttime="20200825 18:17:58.571"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:18:00.450" starttime="20200825 18:17:58.570"></status>
-</kw>
-<kw name="Go To" library="Selenium2Library">
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<arguments>
-<arg>${url_portal_test_login_page}</arg>
-</arguments>
-<msg timestamp="20200825 18:18:00.451" level="INFO">Opening url 'https://portaltest.acommercedev.com/'</msg>
-<status status="PASS" endtime="20200825 18:18:01.455" starttime="20200825 18:18:00.451"></status>
-</kw>
-<kw name="Input a Empty Username and Password" library="portal_test_keyword">
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>${portaltest_input_username}</arg>
-<arg>${Empty}</arg>
-</arguments>
-<msg timestamp="20200825 18:18:01.457" level="INFO">Typing text '' into text field 'name:auth-username'.</msg>
-<status status="PASS" endtime="20200825 18:18:01.527" starttime="20200825 18:18:01.456"></status>
-</kw>
-<kw name="Input Password" library="Selenium2Library">
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>${portaltest_input_password}</arg>
-<arg>${Empty}</arg>
-</arguments>
-<msg timestamp="20200825 18:18:01.527" level="INFO">Typing password into text field 'name:auth-password'.</msg>
-<msg timestamp="20200825 18:18:01.557" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20200825 18:18:01.589" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" endtime="20200825 18:18:01.589" starttime="20200825 18:18:01.527"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:18:01.589" starttime="20200825 18:18:01.456"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${portaltest_login_btn}</arg>
-</arguments>
-<msg timestamp="20200825 18:18:01.590" level="INFO">Clicking element 'class:btn.btn-primary'.</msg>
-<status status="PASS" endtime="20200825 18:18:01.642" starttime="20200825 18:18:01.589"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_invalid_username_email}</arg>
-<arg>Please fill out this field.</arg>
-</arguments>
-<msg timestamp="20200825 18:18:01.658" level="INFO">Current page contains element '//*[@oninvalid="this.style.borderColor='rgba(235, 87, 87, 0.4)'"]'.</msg>
-<status status="PASS" endtime="20200825 18:18:01.658" starttime="20200825 18:18:01.643"></status>
-</kw>
-<kw name="Page Should Contain Image" library="Selenium2Library">
-<doc>Verifies image identified by ``locator`` is found from current page.</doc>
-<arguments>
-<arg>${portaltest_logo}</arg>
-</arguments>
-<msg timestamp="20200825 18:18:01.675" level="INFO">Current page contains image 'class:idp-login__header__logo'.</msg>
-<status status="PASS" endtime="20200825 18:18:01.675" starttime="20200825 18:18:01.659"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_body}</arg>
-</arguments>
-<msg timestamp="20200825 18:18:01.687" level="INFO">Current page contains element 'class:idp-login__body'.</msg>
-<status status="PASS" endtime="20200825 18:18:01.687" starttime="20200825 18:18:01.675"></status>
-</kw>
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<arguments>
-<arg>${portaltest_login_h3}</arg>
-<arg>Login to</arg>
-</arguments>
-<msg timestamp="20200825 18:18:01.688" level="INFO">Verifying element 'class:idp-login__body__login-form h3' contains exact text 'Login to'.</msg>
-<status status="PASS" endtime="20200825 18:18:01.710" starttime="20200825 18:18:01.687"></status>
-</kw>
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<arguments>
-<arg>${portaltest_login_h4}</arg>
-<arg>aCommerce Management Portal</arg>
-</arguments>
-<msg timestamp="20200825 18:18:01.710" level="INFO">Verifying element 'class:idp-login__body__login-form h4' contains exact text 'aCommerce Management Portal'.</msg>
-<status status="PASS" endtime="20200825 18:18:01.730" starttime="20200825 18:18:01.710"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_input_username}</arg>
-</arguments>
-<msg timestamp="20200825 18:18:01.740" level="INFO">Current page contains element 'name:auth-username'.</msg>
-<status status="PASS" endtime="20200825 18:18:01.740" starttime="20200825 18:18:01.730"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_input_password}</arg>
-</arguments>
-<msg timestamp="20200825 18:18:01.749" level="INFO">Current page contains element 'name:auth-password'.</msg>
-<status status="PASS" endtime="20200825 18:18:01.749" starttime="20200825 18:18:01.741"></status>
-</kw>
-<kw name="Page Should Contain Button" library="Selenium2Library">
-<doc>Verifies button ``locator`` is found from current page.</doc>
-<arguments>
-<arg>${portaltest_login_btn}</arg>
-</arguments>
-<msg timestamp="20200825 18:18:01.778" level="INFO">Current page contains button 'class:btn.btn-primary'.</msg>
-<status status="PASS" endtime="20200825 18:18:01.778" starttime="20200825 18:18:01.750"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_h6}</arg>
-<arg>Forgot your password ?</arg>
-</arguments>
-<msg timestamp="20200825 18:18:01.789" level="INFO">Current page contains element 'class:idp-login__body__login-form h6'.</msg>
-<status status="PASS" endtime="20200825 18:18:01.789" starttime="20200825 18:18:01.778"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_h6}</arg>
-<arg>No worries,</arg>
-</arguments>
-<msg timestamp="20200825 18:18:01.803" level="INFO">Current page contains element 'class:idp-login__body__login-form h6'.</msg>
-<status status="PASS" endtime="20200825 18:18:01.803" starttime="20200825 18:18:01.790"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_reset_password_link}</arg>
-<arg>Click here to Reset your password.</arg>
-<arg>${url_portal_test_forgot_pwd_page}</arg>
-</arguments>
-<msg timestamp="20200825 18:18:01.813" level="INFO">Current page contains element 'class:idp-login__body__login-form h6 a'.</msg>
-<status status="PASS" endtime="20200825 18:18:01.814" starttime="20200825 18:18:01.803"></status>
-</kw>
-<tags>
-<tag>test</tag>
-</tags>
-<status status="PASS" endtime="20200825 18:18:01.814" critical="yes" starttime="20200825 18:17:58.568"></status>
-</test>
-<test id="s1-s3-s1-t5" name="If user Click here to Reset your password Link.">
-<kw name="Open Browser by Google Chrome" library="common_keywords">
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<arguments>
-<arg>about:blank</arg>
-<arg>chrome</arg>
-</arguments>
-<msg timestamp="20200825 18:18:01.818" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" endtime="20200825 18:18:04.048" starttime="20200825 18:18:01.817"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:18:04.048" starttime="20200825 18:18:01.817"></status>
-</kw>
-<kw name="Go To" library="Selenium2Library">
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<arguments>
-<arg>${url_portal_test_login_page}</arg>
-</arguments>
-<msg timestamp="20200825 18:18:04.049" level="INFO">Opening url 'https://portaltest.acommercedev.com/'</msg>
-<status status="PASS" endtime="20200825 18:18:05.556" starttime="20200825 18:18:04.049"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${portaltest_login_reset_password_link}</arg>
-</arguments>
-<msg timestamp="20200825 18:18:05.556" level="INFO">Clicking element 'class:idp-login__body__login-form h6 a'.</msg>
-<status status="PASS" endtime="20200825 18:18:05.830" starttime="20200825 18:18:05.556"></status>
-</kw>
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_body_login_form}</arg>
-</arguments>
-<status status="PASS" endtime="20200825 18:18:05.844" starttime="20200825 18:18:05.830"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_body_login_form}</arg>
-<arg>Forget Password</arg>
-</arguments>
-<msg timestamp="20200825 18:18:05.855" level="INFO">Current page contains element 'class:idp-login__body__login-form'.</msg>
-<status status="PASS" endtime="20200825 18:18:05.855" starttime="20200825 18:18:05.845"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${portaltest_login_body_login_form}</arg>
-<arg>Enter your email to reset your password</arg>
-</arguments>
-<msg timestamp="20200825 18:18:05.862" level="INFO">Current page contains element 'class:idp-login__body__login-form'.</msg>
-<status status="PASS" endtime="20200825 18:18:05.862" starttime="20200825 18:18:05.855"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${forget_password_page_input}</arg>
-</arguments>
-<msg timestamp="20200825 18:18:05.875" level="INFO">Current page contains element 'class:idp-login__body__login-form__text-box'.</msg>
-<status status="PASS" endtime="20200825 18:18:05.875" starttime="20200825 18:18:05.862"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${forget_password_username_email_input}</arg>
-<arg>Username or Email</arg>
-</arguments>
-<msg timestamp="20200825 18:18:05.890" level="INFO">Current page contains element '//*[@placeholder="Username or Email"]'.</msg>
-<status status="PASS" endtime="20200825 18:18:05.890" starttime="20200825 18:18:05.876"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${forget_password_page_submit_btn}</arg>
-</arguments>
-<msg timestamp="20200825 18:18:05.905" level="INFO">Current page contains element 'class:idp-login__body__login-form button'.</msg>
-<status status="PASS" endtime="20200825 18:18:05.905" starttime="20200825 18:18:05.891"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${forget_password_page_back_to_login}</arg>
-</arguments>
-<msg timestamp="20200825 18:18:05.943" level="INFO">Current page contains element 'class:idp-login__body__login-form h6'.</msg>
-<status status="PASS" endtime="20200825 18:18:05.943" starttime="20200825 18:18:05.906"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>${forget_password_page_login_btn}</arg>
-<arg>Submit</arg>
-</arguments>
-<msg timestamp="20200825 18:18:05.958" level="INFO">Current page contains element 'class:idp-login__body__login-form h6 a'.</msg>
-<status status="PASS" endtime="20200825 18:18:05.958" starttime="20200825 18:18:05.943"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:18:05.959" critical="yes" starttime="20200825 18:18:01.815"></status>
-</test>
-<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20200825 18:18:06.401" starttime="20200825 18:18:05.962"></status>
-</kw>
-<status status="PASS" endtime="20200825 18:18:06.401" starttime="20200825 18:17:43.107"></status>
-</suite>
-<status status="PASS" endtime="20200825 18:18:06.412" starttime="20200825 18:17:43.104"></status>
-</suite>
-<status status="PASS" endtime="20200825 18:18:06.420" starttime="20200825 18:17:22.756"></status>
+<status status="PASS" endtime="20200827 16:37:17.120" starttime="20200827 16:37:03.885"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="9">Critical Tests</stat>
-<stat fail="0" pass="9">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="0" pass="2">test</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Portal Test" pass="9">Portal Test</stat>
-<stat fail="0" id="s1-s1" name="ForgetPasswordPage" pass="3">Portal Test.ForgetPasswordPage</stat>
-<stat fail="0" id="s1-s1-s1" name="Demo Acom Portal Test Forget Password Page" pass="3">Portal Test.ForgetPasswordPage.Demo Acom Portal Test Forget Password Page</stat>
-<stat fail="0" id="s1-s2" name="LoggedIn" pass="1">Portal Test.LoggedIn</stat>
-<stat fail="0" id="s1-s2-s1" name="Demo Acom Portal Test Logged In Page" pass="1">Portal Test.LoggedIn.Demo Acom Portal Test Logged In Page</stat>
-<stat fail="0" id="s1-s3" name="LoginPage" pass="5">Portal Test.LoginPage</stat>
-<stat fail="0" id="s1-s3-s1" name="Demo Acom Portal Test Login Page" pass="5">Portal Test.LoginPage.Demo Acom Portal Test Login Page</stat>
+<stat fail="0" id="s1" name="Demo Acom Portal Test Loggen In Page Promotion Menu" pass="1">Demo Acom Portal Test Loggen In Page Promotion Menu</stat>
 </suite>
 </statistics>
 <errors>
