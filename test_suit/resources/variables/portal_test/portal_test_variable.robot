@@ -2,7 +2,6 @@
 # ${url_portal_test}                       https://portaltest.acommercedev.com/
 ${url_portal_test_login_page}              https://portaltest.acommercedev.com/
 ${url_portal_test_forget_password_page}    https://identity.integration.acommercedev.com/o/forget_password/
-${url_portal_test_summary_page}            https://portaltest.acommercedev.com/promotions
 
 #--- Username & Passwotf ---#
 ${portaltest_username}            jirayu.k@acommerce.asia

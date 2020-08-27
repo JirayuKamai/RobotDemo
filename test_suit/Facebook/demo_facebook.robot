@@ -9,7 +9,7 @@ ${url_facebook}        https://www.facebook.com
 ${title_facebook}      Facebook - เข้าสู่ระบบหรือสมัครใช้งาน
 ${input_user}          id:email
 ${input_pass}          id:pass
-${btn_login}           //*[@id="u_0_b"]
+${btn_login}           id:loginbutton
 ${txt_message}         //div//textarea[@name="xhpc_message"]
 ${username_fail}            xxxxx@xxxxx.com
 ${password_fail}            12345678
@@ -24,14 +24,13 @@ Login facebook - Fail
     Input Username and Password    ${input_user}     ${input_pass}       ${username_fail}      ${password_fail}
     Click Button Login          ${btn_login}
     Verify Login Fail
-# Login facebook - success
-#     [tags]    success
-#     Go To           ${url_facebook}
-#     Verify facebook page           ${title_facebook}
-#     Input Username and Password    ${input_user}     ${input_pass}       ${username_success}      ${password_success}
-#     Click Button Login          ${btn_login}
-#     Verify Login Success           ${txt_message}
-
+Login facebook - success
+    [tags]    success
+    Go To           ${url_facebook}
+    Verify facebook page           ${title_facebook}
+    Input Username and Password    ${input_user}     ${input_pass}       ${username_success}      ${password_success}
+    Click Button Login          ${btn_login}
+    Verify Login Success           ${txt_message}
 *** Keywords ***
 Verify facebook page
     [Arguments]               ${title}

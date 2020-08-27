@@ -1,5 +1,5 @@
 *** Settings ***
-Resource          C:\Workspeces\RobotDemo\test_suit\resources\all_global_variables.robot
+Resource          /Users/jirayukam-ai_mbp/RobotDemo/test_suit/resources/all_global_variables.robot
 Suite Setup       Open Browser by Google Chrome
 Suite Teardown    Close All Browsers
 
