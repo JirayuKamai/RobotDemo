@@ -28,8 +28,10 @@ ${url_portal_test_forgot_pwd_page}                    https://identity.integrati
 ${portaltest_login_invalid_username_email}            //*[@oninvalid="this.style.borderColor='rgba(235, 87, 87, 0.4)'"]
 
 #--- Admin Page ---#
-${admin_partner_text}                                 //*[@id="wrapper"]/div[2]/div[1]/div/p[1]
+${admin_partner_text}                                 class:portal-navbar__partner-text
 ${admin_header_logo}                                  //*[@id="main-container"]/div/div/div[1]/div/div/div[1]/img
+${admin_header_noit_btn}                              class:fa fa-bell
+${admin_header_user_btn}                              class:portal-navbar__img-avatar fa fa-user
 ${admin_info_user_avatar}                             class:portal-navigation__user-info__img-avatar
 ${admin_info_header_text}                             //*[@id="wrapper"]/aside/div[1]/div/h4[1]
 ${admin_info_header_user}                             //*[@id="wrapper"]/aside/div[1]/div/h4[2]
@@ -51,6 +53,10 @@ ${admin_nav_main_menu_sales_orders_manage_sales_orders}    //*[@id="sales-orders
 ${admin_nav_main_menu_delivery}                     //*[@id="delivery"]
 ${admin_nav_main_menu_delivery_shipping_orders}     //*[@id="delivery_shipping-orders"]
 ${admin_nav_main_menu_delivery_fleet_management}    //*[@id="delivery_fleet-management"]
+
+${admin_partner_footer}               class:partner-portal-footer__container
+${admin_partner_footer_newsletter}    class:partner-portal-footer__newsletter
+${admin_partner_footer_contact}       class:partner-portal-footer__contact
 
 #--- Forget Password Page ---#
 ${forget_password_page_input}                     class:idp-login__body__login-form__text-box

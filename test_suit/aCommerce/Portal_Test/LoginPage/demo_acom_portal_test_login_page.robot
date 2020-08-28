@@ -5,11 +5,13 @@ Suite Teardown    Close All Browsers
 
 *** Test Cases ***
 If user Go to Login Page
-    Go To                          ${url_portal_test_login_page}
+    Go To                                ${url_portal_test_login_page}
+    Wait Until Page Contains Element     ${portaltest_login_body}
     Verify url_portal_test_login_page
 
 If user Login by Valid Data
     Go To                                  ${url_portal_test_login_page}
+    Wait Until Page Contains Element       ${portaltest_login_body}
     Input a Valid Username and Password
     Click Element                          ${portaltest_login_btn}
     Wait Until Page Contains Element       ${admin_header_logo}
